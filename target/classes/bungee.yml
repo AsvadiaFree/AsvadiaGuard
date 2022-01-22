@@ -1,0 +1,5 @@
+name: AsvadiaGuard
+author: AziRixX
+version: 0.1
+depends: [AsvadiaAPI]
+main: fr.asvadia.guard.bungee.ProxyMain

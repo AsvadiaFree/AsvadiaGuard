@@ -1,0 +1,22 @@
+name: AsvadiaGuard
+author: AziRixX
+version: 0.8
+depend: [ProtocolLib, AsvadiaAPI]
+main: fr.asvadia.guard.bukkit.BukkitMain
+commands:
+  guard:
+
+
+permissions:
+  guard.*:
+    default: false
+    children:
+      guard.show:
+        description: Show hide commands and tab complete
+        default: false
+      guard.notify:
+        description: Notify of guard
+        default: false
+
+
+

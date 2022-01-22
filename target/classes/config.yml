@@ -1,0 +1,63 @@
+proxy:
+  enable: true
+  token: ''
+webhook: ''
+protect:
+  creative: true
+  synchronisation: true
+  allow: ["AziRixX", "Symeloxk", "MazBaz"]
+  permission:
+    - '*'
+    - 'bungeecord.command.alert'
+    - 'bungeecord.command.end'
+    - 'bungeecord.command.find'
+    - 'bungeecord.command.list'
+    - 'bungeecord.command.reload'
+    - 'bungeecord.command.ip'
+    - 'bungeecord.command.send'
+    - 'bungeecord.command.sender'
+hide:
+  blacklist:
+    config: 2
+    plugin: []
+    command: []
+  whitelist:
+    plugin: ["AsvadiaCore"]
+    command: []
+chat:
+  permission: "&6&lGuard &f&l» &cVous n'avez pas accès à cette commande."
+  hide: "&c&lErreur &f&l» &eCommande inconnue, faites &b&l/help &epour plus d'informations."
+  connection:
+    incorrectToken: "&c&lConnexion invalide. (01)"
+    noToken: "&c&lConnexion invalide. (02)"
+    invalidPacket: "&cProtocol de connexion invalid. (03)"
+  protect:
+    incorrectSession: "&c&lSession incorrect. (04)"
+    notAccess: "&6&lGuard &f&l» &cVous devez être vérifié pour continuer."
+    failure: "&6&lGuard &f&l» &cLe code est incorrect."
+    success: "&6&lGuard &f&l» &aVous avez maintenant accès. (serveur)"
+    gamemode: "&c&lVous ne pouvez pas être en créatif. (05)"
+    permisssion: "&c&lVous possédez une permission illégal. (06)"
+    synchronisation:
+      start: "&6&lGuard &f&l» &eTentative de synchronisation avec le serveur..."
+      success: "&6&lGuard &f&l» &aSynchronisation réussi."
+      noToken: "&6&lGuard &f&l» &eVous n'avez pas de token sur ce serveur."
+      timeout: "&6&lGuard &f&l» &cAucune réponse du serveur."
+      disable: "&6&lGuard &f&l» &eLa synchronisation est désactivé sur ce serveur."
+  notify:
+    alert:
+      log: '[Guard] %name% -> %type% %args%'
+      message: "&6&lGuard &f&l» &c%name% &f-> &c%type% &4%args%"
+      discord: ":x: **Guard »** %name% **->** %type% *%args%* @everyone"
+    warn:
+      log: '[Guard] %name% -> %type% %args%'
+      message: "&6&lGuard &f&l» &e%name% &f-> &e%type% &6%args%"
+      discord: ":warning: **Guard »** %name% **->** %type% *%args%*"
+    success:
+      log: '[Guard] %name% -> %type% %args%'
+      message: "&6&lGuard &f&l» &a%name% &f-> &a%type% &2%args%"
+      discord: ":white_check_mark: **Guard »** %name% **->** %type% *%args%*"
+    args:
+      separator: ','
+      start: (
+      end: )
